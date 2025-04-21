@@ -173,7 +173,7 @@ const [status,setStatus]=useState("Pending");
       
     // </div> 
     <div className='list add flex-col'>
-    <h1 style={{textAlign:'center',marginTop:2,marginBottom:2,paddingBottom:5}}>All Foods List</h1>
+    <h1 style={{textAlign:'center',marginTop:2,marginBottom:2,paddingBottom:5}}>All Reviews List</h1>
     {/* <p>All Reviews List</p> */}
     <div className="list-table">
       <div className="list-table-format title">
