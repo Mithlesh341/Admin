@@ -1,6 +1,7 @@
 .sidebar{
-    width: 18%;
-    min-height: 100vh;
+    /* width: 20vw; */
+    width: 17vw;
+    min-height:100vh;
     border: 1.5px solid #a9a9a9;
     border-top: 0;
     font-size: max(1vw, 10px);
@@ -25,16 +26,60 @@
     cursor: pointer;
 }
 
+ .sidebar-option:hover
+    {
+        background: linear-gradient(135deg,#0056b3 ,#003366 );
+        color: white;
+    }
+
+
  /* THE active classname is inbuilt classname which automatically
  comes when the navlink tag is clicked */
 .sidebar-option.active{
     background-color: #e0715a;
     border-top: tomato;
 }
-
-@media (max-width: 900px){
+ @media (max-width: 900px){
+    .sidebar{
+        width: 24vw;
+    }
+}
+@media (max-width: 700px){
+     .sidebar{
+          width: full;
+          border:0;
+          height: fit-content
+    }
+    .sidebar-options{
+         padding-top: 40px;
+         flex-direction: row;
+        
+    }
+    .sidebar-option{
+    border-right: 1px solid #a9a9a9;
+    border-radius: 3px 3px 3px 3px;
+    }
+}
+/* @media (max-width: 450px){
+    .sidebar{
+          width: full;
+          border:0;
+          height: fit-content
+    }
+    .sidebar-options{
+         padding-top: 40px;
+         flex-direction: row;
+        
+    }
+    .sidebar-option{
+    border-right: 1px solid #a9a9a9;
+    border-radius: 3px 3px 3px 3px;
+    }
+} */
+/* @media (max-width: 900px){
     .sidebar-option p{
         display: none;
         
     }
-}
+} */
+ 

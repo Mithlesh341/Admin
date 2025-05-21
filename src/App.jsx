@@ -4,6 +4,7 @@ import Sidebar from './Components/Sidebar/Sidebar'
 import { Route,Routes } from 'react-router-dom'
 import List from './pages/List/List.jsx'
 import Home from './Components/Home.jsx'
+import Approved from './pages/Approved/Approved.jsx'
 
 
 
@@ -12,14 +13,20 @@ const App = () => {
  // const url = "http://localhost:5500"
 
   return (
-    <div>
-    
-    <Routes>
-          <Route path='/' element={<Home/>}></Route>
+    <>
+     <Home/>
+     <Routes>
+      {/*<Route path='/' element={<Home/>}> */}
+          {/* <Route path='/' element={<Home/>}>  </Route>
           <Route path='/list' element={<List/>}></Route>
-</Routes> 
+          <Route path='/approved' element={<Approved/>} ></Route> */}
+          {/* </Route> */}
+           <Route path='/' element={<List/>}/>
+          <Route path='/list' element={<List/>}/>
+          <Route path='/approved' element={<Approved/>}/>  
+     </Routes> 
      
-    </div>
+    </>
   )
 }
 
